@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adelaide Car Sales</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/4802565ebc.js"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="script.js"></script>
-  </head>
 
-  <body>
-    <main>
-      <nav class="topnav" id="topnav">
-        <div class="expandable_elements">
-          <p class="page-title">Adelaide Car Sales</p>
-          <div class="link_list">
-            <a class="active" href="index.html">Home</a>
-            <a class="active" href="cars.html">Used Cars</a>
-            <a class="active" href="parts.html">Parts</a>
-          </div>
-          <div class="cart">
-            <i class="fa-solid fa-shopping-cart fa-2x"></i>
-            <p>Shopping Cart</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adelaide Car Sales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav class="topnav" id="topnav">
+      <div class="expandable_elements">
+        <p class="page-title">Adelaide Car Sales</p>
+        <div class="link_list">
+          <a class="active" href="index.html">Home</a>
+          <a class="active" href="cars.html">Used Cars</a>
+          <a class="active" href="parts.html">Parts</a>
         </div>
-        <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
-          <i class="fa-solid fa-bars fa-2x"></i>
-        </a>
-      </nav>
-
-      <div class="content_container">
+        <div class="cart">
+          <i class="fa-solid fa-shopping-cart fa-2x"></i>
+          <p>Shopping Cart</p>
+        </div>
       </div>
-    </main>
-  </body>
+      <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </a>
+    </nav>
+
+    <div class="content_container">
+      <h1>Home Page</h1>
+      <h2>Explore our brand!</h2>
+      <p class="init_message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cum nobis! Labore recusandae aperiam odio, distinctio voluptates voluptatem est ullam libero saepe, officia accusantium quam iure perferendis cum nisi? Minima mollitia beatae, et recusandae illo eveniet natus ullam esse odit omnis nisi? Blanditiis molestiae vel, ad eveniet esse animi doloremque molestias provident ducimus voluptas exercitationem ipsum nesciunt perspiciatis vitae. Minus incidunt quidem fuga nostrum veritatis recusandae libero. Magni, unde deserunt dolore exercitationem rerum, cupiditate recusandae distinctio, odio quo eligendi molestias impedit cumque aut labore modi. Nostrum ad eum aut cumque, excepturi est inventore placeat eius numquam repellendus expedita vero eligendi.</p>
+      <div class="links_to_other_pages">
+        <div class="cars">
+          <img src="used_cars.jpg" alt="Picture of Used Cars">
+          <h3>Used Cars</h3>
+          <p>Explore our vast selection of used cars to suit your needs! We offer complettive pricing and financing options. Click below to explore more! </p>
+          <a href="cars.html"><button>Show me more!</button></a>
+        </div>
+        <div class="parts">
+          <img src="car_parts.jpg" alt="Picture of Car Parts">
+          <h3>Car Parts</h3>
+          <p>We have the widest selection of car parts available in all of Australia! Explore our prices and availability!</p>
+          <a href="cars.html"><button>Show me more!</button></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+
 </html>
