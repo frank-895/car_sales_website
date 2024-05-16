@@ -21,8 +21,11 @@
             <a class="active" href="index.html">Home</a>
             <a class="active" href="cars.html">Used Cars</a>
             <a class="active" href="parts.html">Parts</a>
+            <a class="active" href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
           </div>
           <div class="cart">
+            <a href="checkout.html" class="cart-link">
             <i class="fa-solid fa-shopping-cart fa-2x"></i>
             <p>Shopping Cart</p>
           </div>
@@ -54,7 +57,7 @@
               <li>Doors: 5 doors</li>
               <li>Odometer: 100 500kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Ford Focus', '2018', 'Automatic', '5 doors', '100,500 kms', '$10,099')">Explore this car!</button>
           </article>
 
           <article class="card card2">
@@ -67,7 +70,7 @@
               <li>Doors: 5 doors</li>
               <li>Odometer: 120 123kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Nissan Pulsar', '2016', 'Manual', '5 doors', '120,123 kms', '$8,999')">Explore this car!</button>
           </article>
 
           <article class="card card3">
@@ -80,7 +83,7 @@
               <li>Doors: 4 doors</li>
               <li>Odometer: 132 430kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Toyota Camry', '2013', 'Automatic', '4 doors', '132,430 kms', '$7,699')">Explore this car!</button>
           </article>
 
           <article class="card card4">
@@ -93,7 +96,7 @@
               <li>Doors: 4 doors</li>
               <li>Odometer: 160 400kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Holden Commodore', '2009', 'Automatic', '4 doors', '160,400 kms', '$4,399')">Explore this car!</button>
           </article>
 
           <article class="card card5">
@@ -106,7 +109,7 @@
               <li>Doors: 5 doors</li>
               <li>Odometer: 1090kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Toyota RAV4', '2022', 'Automatic', '5 doors', '1,090 kms', '$24,399')">Explore this car!</button>
           </article>
 
           <article class="card card6">
@@ -119,11 +122,20 @@
               <li>Doors: 5 doors</li>
               <li>Odometer: 399kms</li>
             </ul>
-            <button>Explore this car!</button>
+            <button onclick="showCarDetails('Kia Rio', '2024', 'Automatic', '5 doors', '399 kms', '$22,099')">Explore this car!</button>
           </article>          
         </div>
 
       </div>
     </main>
+
+    <div id="carModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="carName"></h2>
+        <ul id="carDetails"></ul>
+        <p id="carPrice"></p>
+      </div>
+      
   </body>
 </html>
