@@ -8,6 +8,21 @@ function expand_nav_contents() {
     }
 }
 
+// ******** IMAGE CAROUSEL **********
+function nextImage() {
+    images = document.querySelectorAll('.carousel img');
+    images.forEach((img, i) => {
+        imgclass = (img.classList)[0];
+        img.classList.remove(imgclass);
+        newimgclass = imgclass.slice(0, -1) + ((parseInt(imgclass.slice(-1)) + 1) % 6);
+        img.classList.add(newimgclass)
+    })
+}
+
+document.querySelector(".carousel button").addEventListener('click', e => {
+    nextImage();
+})
+
 function showCarDetails(name, year, transmission, doors, odometer, price) {
     document.getElementById('carName').innerText = name;
     document.getElementById('carDetails').innerHTML = `

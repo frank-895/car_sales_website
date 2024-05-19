@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adelaide Car Sales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4802565ebc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+</head>
+
+  <body>
+    <main>
+      <nav class="topnav" id="topnav">
+        <div class="expandable_elements">
+          <p class="page-title">Adelaide Car Sales</p>
+          <div class="link_list">
+            <a class="active" href="index.html">Home</a>
+            <a class="active" href="cars.html">Used Cars</a>
+            <a class="active" href="parts.html">Parts</a>
+            <a class="active" href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+          </div>
+          <div class="cart">
+            <a href="checkout.html" class="cart-link">
+            <i class="fa-solid fa-shopping-cart fa-2x"></i>
+            <p>Shopping Cart</p>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </a>
+      </nav>
+
+      <div class="content_container focus">
+        <p>Consider this a template page for other used cars to be linked to.</p>
+        <h1>Ford Focus</h1>
+        <p class="price">$10099 drive away!</p>
+        <div class="carousel">
+            <button><div class="next_button">&rarr;</div></button>
+            <img src="images/focus_images/img1.jpeg" alt="Picture of Ford Focus" class="image0">
+            <img src="images/focus_images/img2.jpeg" alt="Picture of Ford Focus" class="image1">
+            <img src="images/focus_images/img3.jpeg" alt="Picture of Ford Focus" class="image2">
+            <img src="images/focus_images/img4.jpeg" alt="Picture of Ford Focus" class="image3">
+            <img src="images/focus_images/img5.jpeg" alt="Picture of Ford Focus" class="image4">
+            <img src="images/focus_images/img6.jpeg" alt="Picture of Ford Focus" class="image5">
+        </div>
+        
+        <ul>
+          <li>Year: 2018</li>
+          <li>Transmission: Automatic</li>
+          <li>Doors: 5 doors</li>
+          <li>Odometer: 100 500kms</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

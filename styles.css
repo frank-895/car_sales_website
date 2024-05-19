@@ -87,6 +87,99 @@ h1, h2, h3 {
     margin: 20px;
 }
 
+.focus p {
+    margin: 50px;
+}
+
+.focus h1 {
+    font-size: 80px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+
+.carousel {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 0.5;
+    position: relative;
+    margin: 100px;
+}
+
+.focus img {
+    border: solid rgba(23, 63, 95) 5px;
+    width: 80%;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    position: absolute;
+}
+
+.focus .next_button {
+    position: absolute;
+    font-size: 60px;
+    z-index: 7;
+    background-color:#f6d55c;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.focus .next_button:hover {
+    background-color:white;
+}
+
+.focus .next_button {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}
+
+.focus .image0 {
+    z-index: 6;
+}
+
+.focus .image1 {
+    z-index: 5;
+    transform: translateX(20px);
+}
+
+.focus .image2 {
+    z-index: 4;
+    transform: translateX(40px);
+}
+
+.focus .image3 {
+    z-index: 3;
+    transform: translateX(60px);
+}
+
+.focus .image4 {
+    z-index: 2;
+    transform: translateX(80px);
+}
+
+.focus .image5 {
+    z-index: 1;
+    transform: translateX(100px);
+}
+
+.focus .price {
+    font-size: 40px;
+    background: rgba(237, 85, 59);
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+.focus ul {
+    margin-top: 20px;
+    margin-left: 100px;
+    list-style: none;
+    font-size: 30px;
+}
+
 p {
     font-size: 15px;
     line-height: 1.5;
@@ -135,7 +228,7 @@ button {
     border: none;
 }
 
-div button {
+div button:not(.focus button) {
     width: 60%;
     height: 60px;
     font-size: 20px;
@@ -204,9 +297,6 @@ button:hover {
     list-style: none;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.card button:hover {
 }
 
 .card li {
