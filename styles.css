@@ -87,14 +87,14 @@ h1, h2, h3 {
     margin: 20px;
 }
 
-.focus p {
-    margin: 50px;
+.focus .to_remove {
+    margin: 30px;
 }
 
 .focus h1 {
     font-size: 80px;
     margin-bottom: 80px;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 .carousel {
@@ -102,7 +102,9 @@ h1, h2, h3 {
     width: 100%;
     aspect-ratio: 1 / 0.5;
     position: relative;
-    margin: 100px;
+    padding-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .focus img {
@@ -173,11 +175,68 @@ h1, h2, h3 {
     color: white;
 }
 
-.focus ul {
-    margin-top: 20px;
-    margin-left: 100px;
-    list-style: none;
+.focus .seller_details {
+    background-color: rgba(0,0,0,0.2);
+    width: 500px;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.focus .seller_details p {
+    font-size: 20px;
+}
+
+.focus .seller_details a {
     font-size: 30px;
+    color: rgba(237, 85, 59);
+    font-weight: bold;
+}
+
+.focus .dropdown_menus > * {
+    border-top: solid black;
+    border-bottom: solid black;
+    text-align: left;
+    font-size: 15px;
+    margin: 30px;
+}
+
+.focus .dropdown_menus button {
+    background-color: white;
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.focus .dropdown_menus ul {
+    line-height: 2;
+    font-size: 15px;
+    margin-left: 30px; 
+    margin-bottom: 30px;
+}
+
+.carstats {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carstats div {
+    background-color:#f6d55c;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+}
+
+.carstats p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 55px;
+    font-weight: bold;
 }
 
 p {

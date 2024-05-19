@@ -19,6 +19,19 @@ function nextImage() {
     })
 }
 
+// ******** EXPAND DETAILS ***********
+function revealDetails(button) {
+    details = button.nextElementSibling;
+    arrow = button.querySelector("span");
+    if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        arrow.innerHTML = '&uarr;';
+    } else {
+        details.classList.add('hidden');
+        arrow.innerHTML = '&darr;';
+    }
+}
+
 document.querySelector(".carousel button").addEventListener('click', e => {
     nextImage();
 })
