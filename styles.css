@@ -50,6 +50,14 @@ nav .expandable_elements {
     justify-content: space-between;
 }
 
+.back_navigation {
+    font-size: 20px;
+}
+
+.back_navigation a {
+    font-weight: bold;
+}
+
 .cart {
     display: flex;
     flex-direction: row;
@@ -239,11 +247,12 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-p {
+p: not(.focus div p) {
     font-size: 15px;
     line-height: 1.5;
     list-style: none;
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 .links_to_other_pages {
@@ -418,7 +427,7 @@ button:hover {
     border-radius: 10px;
 }
 
-.close {
+.close, .close_button {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -426,7 +435,7 @@ button:hover {
 }
 
 .close:hover,
-.close:focus {
+.close:focus, .close_button:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;

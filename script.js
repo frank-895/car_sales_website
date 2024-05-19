@@ -32,19 +32,19 @@ function revealDetails(button) {
     }
 }
 
-document.querySelector(".carousel button").addEventListener('click', e => {
+carouselButton = document.querySelector(".carousel button");
+if (carouselButton != null) {
+    carouselButton.addEventListener('click', e => {
     nextImage();
-})
+    })
+}
 
-function showCarDetails(name, year, transmission, doors, odometer, price) {
-    document.getElementById('carName').innerText = name;
-    document.getElementById('carDetails').innerHTML = `
-        <li>Year: ${year}</li>
-        <li>Transmission: ${transmission}</li>
-        <li>Doors: ${doors}</li>
-        <li>Odometer: ${odometer}</li>
-    `;
-    document.getElementById('carPrice').innerText = price;
+
+function showCarDetails(button) {
+    card = button.parentElement;
+    document.getElementById('carName').innerHTML = card.querySelector('.carname').innerHTML;
+    document.getElementById('carDetails').innerHTML = card.querySelector('ul').innerHTML;
+    document.getElementById('carPrice').innerText = card.querySelector('.price').innerHTML;
     document.getElementById('carModal').style.display = 'block';
 }
 
@@ -55,8 +55,12 @@ function showPartDetails(name, price, description) {
     document.getElementById('partModal').style.display = 'block';
 }
 
-function closeModal() {
+function closeCarModal() {
+    console.log('work')
     document.getElementById('carModal').style.display = 'none';
+}
+
+function closeModal() {
     document.getElementById('partModal').style.display = 'none';
 }
 
