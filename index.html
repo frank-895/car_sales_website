@@ -1,59 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adelaide Car Sales</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sydney Car Sales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-  <main>
-    <nav class="topnav" id="topnav">
-      <div class="expandable_elements">
-        <p class="page-title">Adelaide Car Sales</p>
-        <div class="link_list">
-          <a class="active" href="index.html">Home</a>
-          <a class="active" href="cars.html">Used Cars</a>
-          <a class="active" href="parts.html">Parts</a>
-          <a class="active" href="about.html">About</a>
-          <a class="active" href="contact.html">Contact</a>
-        </div>
-        <div class="cart">
-          <a href="checkout.html" class="cart-link">
-            <i class="fa-solid fa-shopping-cart fa-2x"></i>
-            <p>Shopping Cart</p>
-          </a>
-        </div>
-      </div>
-      <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
-        <i class="fa-solid fa-bars fa-2x"></i>
-      </a>
-    </nav>
+    <main>
+        <nav class="topnav" id="topnav">
+            <div class="expandable_elements">
+                <p class="page-title">Sydney Car Sales</p>
+                <div class="link_list">
+                    <a class="active" href="index.html">Home</a>
+                    <a class="active" href="cars.html">Luxury Cars</a>
+                    <a class="active" href="parts.html">Car Parts</a>
+                    <a class="active" href="about.html">About</a>
+                    <a class="active" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
+        </nav>
 
-    <div class="content_container">
-      <h1>Home Page</h1>
-      <h2>Explore our brand!</h2>
-      <p class="init_message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cum nobis! Labore recusandae aperiam odio, distinctio voluptates voluptatem est ullam libero saepe, officia accusantium quam iure perferendis cum nisi? Minima mollitia beatae, et recusandae illo eveniet natus ullam esse odit omnis nisi? Blanditiis molestiae vel, ad eveniet esse animi doloremque molestias provident ducimus voluptas exercitationem ipsum nesciunt perspiciatis vitae. Minus incidunt quidem fuga nostrum veritatis recusandae libero. Magni, unde deserunt dolore exercitationem rerum, cupiditate recusandae distinctio, odio quo eligendi molestias impedit cumque aut labore modi. Nostrum ad eum aut cumque, excepturi est inventore placeat eius numquam repellendus expedita vero eligendi.</p>
-      <div class="links_to_other_pages">
-        <div class="cars">
-          <img src="used_cars.jpg" alt="Picture of Used Cars">
-          <h3>Used Cars</h3>
-          <p>Explore our vast selection of used cars to suit your needs! We offer competitive pricing and financing options. Click below to explore more! </p>
-          <a href="cars.html"><button>Show me more!</button></a>
+        <div class="hero">
+            <img src="images/blackcar.jpg" alt="Picture of Black Car" class="hero-image">
+            <div class="hero-text">
+                <h1>Your Dream Car Awaits!</h1>
+                <button class="listing-button" onclick="location.href='cars.html'">Current Listings</button>
+            </div>
         </div>
-        <div class="parts">
-          <img src="car_parts.jpg" alt="Picture of Car Parts">
-          <h3>Car Parts</h3>
-          <p>We have the widest selection of car parts available in all of Australia! Explore our prices and availability!</p>
-          <a href="parts.html"><button>Show me more!</button></a> <!-- Corrected href to parts.html -->
+
+        <div class="content_container">
+            <h1>Explore our brand!</h1>
+            <p class="init_message">Sydney Car Sales prides ourselves on offering a handpicked selection of European Prestige & Sports Cars with a team of esteemed professionals. Our overall aim is excellent service while delivering high-quality vehicles; that is what stands us out in the automobile industry. Sydney Car Sales has a broad channel of car lovers and collectors; with experience, we have developed a relationship based on trust with our customers. On the understanding that each car has a story and every customer has their definition of a perfect car, we meet all the requirements. Therefore, from classical treasures, collectibles of modern times, daily driver vehicles, we will offer high quality to each. We have a handpicked list of best cars to ensure only quality cars are available to our customers. Our aim, therefore, is to ensure that our customers get the best vehicles. Our experts ensure you get the car of your choice to fit your lifestyle. We have diversified options in financing ideas and favorable pricing, therefore providing value and quality. Sydney Car Sales is also dedicated to providing after-sales services due to continued backing; thus ensuring your car is well maintained. Therefore, buying from the Sydney Car Sales goes beyond moving a car and into a family of distinctive excellence, honesty, and guest contentment. Our determination is to ensure buying a car is admirable, and our customers can visit us for their European Prestige and Sports Cars offers.</p>
+            <div class="links_to_other_pages">
+                <div class="cars">
+                    <img src="images/used cars.jpg" alt="used cars">
+                    <h3>Luxury Cars</h3>
+                    <p>Explore our vast selection of luxury cars to suit your needs! We offer competitive pricing and financing options. Click below to explore more!</p>
+                    <a href="cars.html"><button>Show me more!</button></a>
+                </div>
+                <div class="parts">
+                    <img src="images/carparts.jpg" alt="Picture of Car Parts">
+                    <h3>Car Parts</h3>
+                    <p>We have the widest selection of car parts available in all of Australia! Explore our prices and availability!</p>
+                    <a href="parts.html"><button>Show me more!</button></a>
+                </div>
+            </div>
+
+            <div class="best-deals">
+                <h2>Our Latest Arrivals</h2>
+                <div class="deals-container">
+                    <div class="deal">
+                        <img src="images/1974porsche.jpg" alt="1974 Porsche">
+                        <h3>1974 Porsche 911 S</h3>
+                        <p>$89,999 drive away!</p>
+                        <p>Year: 1974, Transmission: Manual, Odometer: 30,000km</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/2016ferrari.jpg" alt="2016 Ferrari">
+                        <h3>2016 Ferrari F12berlinetta F152</h3>
+                        <p>$250,000 drive away!</p>
+                        <p>Year: 2016, Transmission: Automatic, Odometer: 10,000km</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/2017Alfa.jpg" alt="2017 Alfa">
+                        <h3>2017 Alfa Romeo 4C</h3>
+                        <p>$60,000 drive away!</p>
+                        <p>Year: 2017, Transmission: Automatic, Odometer: 20,000km</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/2017benz.jpg" alt="2017 Benz">
+                        <h3>2017 Mercedes-Benz C63 AMG S A205</h3>
+                        <p>$70,000 drive away!</p>
+                        <p>Year: 2017, Transmission: Automatic, Odometer: 15,000km</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/2023bmw.jpg" alt="2023 BMW">
+                        <h3>2023 BMW X2 sDrive18i F39</h3>
+                        <p>$150,000 drive away!</p>
+                        <p>Year: 2023, Transmission: Automatic, Odometer: 1,000km</p>
+                    </div>
+                    <div class="deal">
+                        <img src="images/comingsoon.jpg" alt="Coming Soon">
+                        <h3>Coming Soon</h3>
+                        <p>Stay tuned for our latest arrivals!</p>
+                        <p>Year: 2024, Transmission: Automatic, Odometer: 0km</p>
+                    </div>
+                </div>
+                <div class="view-all-deals">
+                    <button>View All Deals</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </main>
+
+        <div class="why-adelaide">
+            <h2>Why Sydney Car Sales?</h2>
+            <ul class="features">
+                <li>Have had fewer than 3 owners</li>
+                <li>Come with a 2-year warranty</li>
+                <li>Have never been owned by smokers</li>
+                <li>Have never been owned by pet owners</li>
+                <li>Come with a full service history</li>
+            </ul>
+            <div class="guarantee">
+                <p>If you're looking for a car that comes with our guarantee of quality and a great deal, talk to one of our specialists today!</p>
+            </div>
+        </div>
+
+        <div class="visit-us">
+            <div class="visit-us-text">
+                <h2>Come visit us!</h2>
+                <p>AND DRIVE AWAY WITH YOUR NEW CAR!</p>
+                <div class="contact-info">
+                    <div>
+                        <p><i class="fa-solid fa-envelope"></i> info@sydneycarsales.com.au</p>
+                        <p><i class="fa-solid fa-location-dot"></i> 1 Macquarie Street, Sydney, NSW 2000</p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-phone"></i> Tel: +61 2 8765 4321</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.861826960182!2d151.21422631511352!3d-33.85678498065659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b0d55c773b7b%3A0x6a1ec6db82b4d024!2sSydney%20Opera%20House!5e0!3m2!1sen!2sau!4v1620232063421!5m2!1sen!2sau" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"></a>
+                <a href="https://x.com/" target="_blank" class="x"></a>
+                <a href="https://www.youtube.com/" target="_blank" class="youtube"></a>
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>
