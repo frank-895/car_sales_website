@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adelaide Car Sales</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sydney Car Sales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-  <main>
-    <nav class="topnav" id="topnav">
-      <div class="expandable_elements">
-        <p class="page-title">Adelaide Car Sales</p>
-        <div class="link_list">
-          <a class="active" href="index.html">Home</a>
-          <a class="active" href="cars.html">Used Cars</a>
-          <a class="active" href="parts.html">Parts</a>
-          <a class="active" href="about.html">About</a>
-          <a class="active" href="contact.html">Contact</a>
+    <main>
+        <nav class="topnav" id="topnav">
+            <div class="expandable_elements">
+                <p class="page-title">Sydney Car Sales</p>
+                <div class="link_list">
+                    <a class="active" href="index.html">Home</a>
+                    <a class="active" href="cars.html">Luxury Cars</a>
+                    <a class="active" href="parts.html">Car Parts</a>
+                    <a class="active" href="about.html">About</a>
+                    <a class="active" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
+        </nav>
+
+        <div class="content_container">
+            <h1>Explore our Car Parts</h1>
+            <div class="filter-bar">
+                <select>
+                    <option>Any Part</option>
+                    <option>Brake Pads</option>
+                    <option>Car Battery</option>
+                    <option>Engine</option>
+                    <option>Fuel Injector</option>
+                    <option>Air Filter</option>
+                    <option>Tires</option>
+                </select>
+                <select>
+                    <option>Any Type</option>
+                </select>
+                <input type="text" placeholder="Keywords">
+                <button>Search</button>
+            </div>
+            <div class="deals-container">
+                <div class="deal">
+                    <img src="images/parts_images/brakepads.png" alt="Brake Pads">
+                    <h3>Brake Pads</h3>
+                    <p>$120 per set</p>
+                    <button>View Details</button>
+                </div>
+                <div class="deal">
+                    <img src="images/parts_images/battery.jpg" alt="Car Battery">
+                    <h3>Car Battery</h3>
+                    <p>$200 each</p>
+                    <button>View Details</button>
+                </div>
+                <div class="deal">
+                    <img src="images/parts_images/engine.jpg" alt="Engine">
+                    <h3>Engine</h3>
+                    <p>$3000 each</p>
+                    <button>View Details</button>
+                </div>
+                <div class="deal">
+                    <img src="images/parts_images/fuel.jpg" alt="Fuel Injector">
+                    <h3>Fuel Injector</h3>
+                    <p>$150 each</p>
+                    <button>View Details</button>
+                </div>
+                <div class="deal">
+                    <img src="images/parts_images/airfilter.jpg" alt="Air Filter">
+                    <h3>Air Filter</h3>
+                    <p>$50 each</p>
+                    <button>View Details</button>
+                </div>
+                <div class="deal">
+                    <img src="images/parts_images/tires.jpg" alt="Tires">
+                    <h3>Tires</h3>
+                    <p>$400 per set</p>
+                    <button>View Details</button>
+                </div>
+            </div>
         </div>
-        <div class="cart">
-          <a href="checkout.html" class="cart-link">
-          <i class="fa-solid fa-shopping-cart fa-2x"></i>
-          <p>Shopping Cart</p>
-        </div>
-      </div>
-      <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
-        <i class="fa-solid fa-bars fa-2x"></i>
-      </a>
-    </nav>
-
-    <div class="content_container">
-      <h1>Explore our Car Parts</h1>
-      <p class="init_message">We offer a wide variety of car parts to meet your needs. From engines to brakes, we've got you covered with top-quality parts at affordable prices. Here's a glimpse of what we offer:</p>
-      <div class="card_container">
-        <article class="card card1">
-          <h2>Brake Pads</h2>
-          <img src="partsimages/brakepads.jpg" alt="Picture of Brake Pads">
-          <p>$120 per set</p>
-          <button onclick="showPartDetails('Brake Pads', '$120 per set', 'High-quality brake pads for all types of cars.')">Explore this part!</button>
-          
-        </article>
-
-        <article class="card card2">
-          <h2>Car Battery</h2>
-          <img src="partsimages/battery.webp" alt="Picture of Car Battery">
-          <p>$200 each</p>
-          <button onclick="showPartDetails('Car Battery', '$200 each', 'Long-lasting car batteries for reliable performance.')">Explore this part!</button>
-        </article>
-
-        <article class="card card3">
-          <h2>Engine Oil</h2>
-          <img src="partsimages/engineoil.jpg" alt="Picture of Engine Oil">
-          <p>$30 per bottle</p>
-          <button onclick="showPartDetails('Engine Oil', '$30 per bottle', 'Premium engine oil to keep your engine running smoothly.')">Explore this part!</button>
-        </article>
-
-        <article class="card card4">
-          <h2>Tires</h2>
-          <img src="partsimages/tires.jpg" alt="Picture of Tires">
-          <p>$400 per set</p>
-          <button onclick="showPartDetails('Tires', '$400 per set', 'Durable tires for all weather conditions.')">Explore this part!</button>
-        </article>
-      </div>
-    </div>
-  </main>
-
-  <div id="partModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2 id="partName"></h2>
-      <p id="partPrice"></p>
-      <p id="partDescription"></p>
-    </div>
-  </div>
+    </main>
 </body>
 </html>

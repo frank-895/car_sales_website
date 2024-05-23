@@ -5,35 +5,47 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #333;
+    color: white;
+}
+
 main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(23, 63, 95,0.8),rgba(32, 100, 155,0.8));
+    background-color: #333;
 }
 
 .content_container {
     width: 90%;
     min-height: 100vh;
-    background-color: white;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 nav {
     background-color: black;
     width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav p {
+.page-title {
     color: white;
     margin: 10px;
-    font-size: 20px;
+    font-size: 36px; /* Increased from 20px */
     font-weight: bold;
 }
 
-nav .link_list * {
+nav .link_list a {
     color: white;
-    padding: 14px 16px;
+    padding: 14px 32px; /* Increased padding */
     font-size: 17px;
     text-decoration: none;
 }
@@ -45,9 +57,8 @@ nav a:hover:not(.menu-icon) {
 
 nav .expandable_elements {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
 }
 
 .back_navigation {
@@ -62,22 +73,9 @@ nav .expandable_elements {
 .cart {
     display: flex;
     flex-direction: row;
+=======
+>>>>>>> 21157982f80bf38147f15ef469902cfb3313057d
     align-items: center;
-}
-
-.cart-link {
-    display: flex;
-    align-items: center;      
-    color: white;             
-    text-decoration: none;    
-}
-
-.cart-link:hover {
-    color: #f6d55c;         
-}
-
-.cart-link p {
-    margin-left: 5px;       
 }
 
 .fa-shopping-cart, .menu-icon {
@@ -85,292 +83,308 @@ nav .expandable_elements {
     margin: 10px;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.listing-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.listing-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
 h1, h2, h3 {
-    margin: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #f6d55c;
 }
 
 .init_message {
     font-size: 15px;
     line-height: 1.5;
-    list-style: none;
-    margin: 20px;
-}
-
-.focus .to_remove {
-    margin: 30px;
-}
-
-.focus h1 {
-    font-size: 80px;
-    margin-bottom: 80px;
-    margin-left: 30px;
-}
-
-.carousel {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    position: relative;
-    padding-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.focus img {
-    border: solid rgba(23, 63, 95) 5px;
-    width: 80%;
-    transition: all 0.3s ease-in-out;
-    height: 100%;
-    position: absolute;
-}
-
-.focus .next_button {
-    position: absolute;
-    font-size: 60px;
-    z-index: 7;
-    background-color:#f6d55c;
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.focus .next_button:hover {
-    background-color:white;
-}
-
-.focus .next_button {
-    position: absolute;
-    right: 20%;
-    top: 50%;
-}
-
-.focus .image0 {
-    z-index: 6;
-}
-
-.focus .image1 {
-    z-index: 5;
-    transform: translateX(20px);
-}
-
-.focus .image2 {
-    z-index: 4;
-    transform: translateX(40px);
-}
-
-.focus .image3 {
-    z-index: 3;
-    transform: translateX(60px);
-}
-
-.focus .image4 {
-    z-index: 2;
-    transform: translateX(80px);
-}
-
-.focus .image5 {
-    z-index: 1;
-    transform: translateX(100px);
-}
-
-.focus .price {
-    font-size: 40px;
-    background: rgba(237, 85, 59);
-    padding: 20px;
-    text-align: center;
-    margin: 0px;
-    font-weight: bold;
-    color: white;
-}
-
-.focus .seller_details {
-    background-color: rgba(0,0,0,0.2);
-    width: 500px;
-    margin: 30px;
-    padding: 40px;
-    border-radius: 15px;
-}
-
-.focus .seller_details p {
-    font-size: 20px;
-}
-
-.focus .seller_details a {
-    font-size: 30px;
-    color: rgba(237, 85, 59);
-    font-weight: bold;
-}
-
-.focus .dropdown_menus > * {
-    border-top: solid black;
-    border-bottom: solid black;
-    text-align: left;
-    font-size: 15px;
-    margin: 30px;
-}
-
-.focus .dropdown_menus button {
-    background-color: white;
-    font-size: 15px;
-}
-
-.hidden {
-    display: none;
-}
-
-.focus .dropdown_menus ul {
-    line-height: 2;
-    font-size: 15px;
-    margin-left: 30px; 
-    margin-bottom: 30px;
-}
-
-.carstats {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.carstats div {
-    background-color:#f6d55c;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px; 
-}
-
-.carstats p {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 55px;
-    font-weight: bold;
-}
-
-p: not(.focus div p) {
-    font-size: 15px;
-    line-height: 1.5;
-    list-style: none;
-    margin-bottom: 20px;
-    margin-left: 30px;
+    margin: 20px 0;
+    text-align: justify;
 }
 
 .links_to_other_pages {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 h3 {
     font-size: 30px;
-    color: white;
+    color: #f6d55c;
 }
 
 .links_to_other_pages p {
     background-color: rgba(237, 85, 59, 0.8);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .cars, .parts {
     background-color: rgba(23, 63, 95,0.8);
-    height: 500px;
-    width: 40%;
-    min-width: 200px;
-    box-shadow: 8px 8px 20px;
+    width: 48%;
+    margin: 10px 1%;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cars p, .parts p {
-    height: 80px;
     color: white;
     padding: 17px;
+    text-align: center;
 }
 
 .cars img, .parts img {
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 50%;
-    object-fit:cover;
+    height: 200px;
+    object-fit: cover;
 }
 
 button {
     border: none;
-}
-
-div button:not(.focus button) {
-    width: 60%;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     background-color: #f6d55c;
     color: black;
+    cursor: pointer;
+    margin: 20px auto;
     display: block;
-    margin: auto;
-    padding: 10px;
+}
+
+button:hover {
+    background-color: #f4c542;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-button:hover {
-    cursor: pointer;
-    font-weight: bold;
-    color: black;
-}
-
-.card_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    width: 300px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: rgba(23, 63, 95,0.8);
-    box-shadow: 4px 4px 30px;
-    margin: 50px;
-    padding-top: 10px;
-}
-
-.card h2 {
-    color: white;
-    font-size: 27px;
-}
-
-.card img {
-    display: block;
-    height: 150px;
-    width: 90%;
-    object-fit: cover;
-    margin: auto;
-    border-radius: 3px;
-    border: solid 2px white;
-}
-
-.card p {
+.why-adelaide {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 50px 20px;
     text-align: center;
+<<<<<<< HEAD
     font-size: 20px;
     color: white;
     margin: 20px;
+=======
+>>>>>>> 21157982f80bf38147f15ef469902cfb3313057d
 }
 
-.card ul {
-    font-size: 15px;
-    line-height: 1.5;
-    background-color: rgba(237, 85, 59, 0.8);
-    width: 100%;
-    padding: 10px;
-    color: white;
+.why-adelaide h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features {
     list-style: none;
-    font-weight: bold;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.features li {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.guarantee {
+    background-color: #f6d55c;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.guarantee p {
+    font-size: 20px;
+    color: #333;
+}
+
+.best-deals {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.best-deals h2 {
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
-.card li {
-    text-decoration: none;
+.best-deals p {
+    font-size: 20px;
+    color: #666;
+}
+
+.deals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.deal {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.deal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.deal h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.deal p {
+    color: #666;
+}
+
+.view-all-deals {
+    margin-top: 30px;
+}
+
+.view-all-deals button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f6d55c;
+    color: black;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.view-all-deals button:hover {
+    background-color: #f4c542;
+}
+
+.visit-us {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.visit-us-text {
+    margin-bottom: 20px;
+}
+
+.visit-us h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f6d55c;
+}
+
+.visit-us p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-info {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.map-container {
+    margin: 20px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons .facebook {
+    background-image: url('images/socialplatform/facebook.png');
+}
+
+.social-icons .x {
+    background-image: url('images/socialplatform/x.png');
+}
+
+.social-icons .youtube {
+    background-image: url('images/socialplatform/youtube.png');
 }
 
 @media all and (min-width: 1000px) {
@@ -403,74 +417,17 @@ button:hover {
         width: 100%;
     }
 
-    .cars, .parts {
-        width: 300px;
+    .links_to_other_pages {
+        flex-direction: column;
     }
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 10px;
-}
+    .cars, .parts {
+        width: 100%;
+        margin: 10px 0;
+    }
 
-.close, .close_button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus, .close_button:hover {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-}
-
-.contact-form label {
-    margin: 10px 0 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.contact-form button {
-    padding: 10px;
-    background-color: #f6d55c;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #f4c542;
+    .deal {
+        width: 90%;
+        margin: 10px 0;
+    }
 }
