@@ -3,21 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="quinnstyles.css">
-	<title>Engine</title>
+	<title>Buy Engines and Components from Car Sales Sydney</title>
 </head>
 
 <body>
+	<!-- this nav bit below from index.html made by Francis Augustine Snelling -->
+	<nav class="topnav" id="topnav">
+		<div class="expandable_elements">
+			<p class="page-title">Sydney Car Sales</p>
+			<div class="link_list">
+				<a class="active" href="index.html">Home</a>
+				<a class="active" href="cars.html">Luxury Cars</a>
+				<a class="active" href="parts.html">Car Parts</a>
+				<a class="active" href="about.html">About</a>
+				<a class="active" href="contact.html">Contact</a>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+			<i class="fa-solid fa-bars fa-2x"></i>
+		</a>
+	</nav>
+	<!-- this nav bit above from index.html made by Francis Augustine Snelling -->
+
 	<div class="divcolour">
-		<img class="centreimg" src="insert image here.png" width="500" height="400"/>
+		<img class="centreimg" src="insert image here.png" width="100" height="100"/>
 	</div>
 	<hr>
 	<h1>Engine</h1>
 	<hr>
+	<br>
 	<p>this is a paragraph</p>
+	<br>
 	<audio controls>
-		<source src="insert mp3 here.mp3" type="audio/mpeg">
+		<source src="audio/engine_standard.mp3" type="audio/mpeg">
 	</audio>
+	<br>
 	<hr>
+	<br>
 	<video width="420" height="340" controls>
 		<source src="insert mp4 here.mp4" type="video/mp4">
 	</video>
@@ -28,29 +50,61 @@
 		<li>unordered list item 1
 		<li>list item 2
 		<li>list item 3
-		<li>list item 4
 	</ul>
+
+	<br>
 	
 	<ol>
 		<li>ORDERED list item 1
 		<li>list item 2
 		<li>list item 3
-		<li>list item 4
 	</ol>
-	
-	<label for="label for meter1">meter1</label>
-	<meter id="meter1" value="5" min="0" max="10"></meter><br>
-	<label for="label for meter2">Meter2</label>
-	<meter id="meter2" value="0.5" min="0" max="1"></meter>
-	
+		
 	<table>
 		<tr>
-			<th> TABLE H</th>
-			<th> TABLE H 2</th>
+			<th></th>
+			<th>STANDARD</th>
+			<th>SPORT</th>
+			<th>RACE</th>
 		</tr>
 		<tr>
-			<td>Table d</td>
-			<td>table d 2</td>
+			<td><b>HORSEPOWER</b></td>
+			<td><label for="PowerStandard"></label>
+				<meter id="PowerStandard" value="3" min="0" max="10"></meter></td>
+			<td><label for="PowerSport"></label>
+				<meter id="PowerSport" value="6" min="0" max="10"></meter></td>
+			<td><label for="PowerRace"></label>
+				<meter id="PowerRace" value="9" min="0" max="10"></td>
+		</tr>
+		<tr>
+			<td><b>TORQUE</b></td>
+			<td><label for="TorqueStandard"></label>
+				<meter id="TorqueStandard" value="3" min="0" max="10"></meter></td>
+			<td><label for="TorqueSport"></label>
+				<meter id="TorqueSport" value="6" min="0" max="10"></meter></td>
+			<td><label for="TorqueRace"></label>
+				<meter id="TorqueRace" value="9" min="0" max="10"></meter></td>
+		</tr>
+		<tr>
+			<td><b>EFFICIENCY</b></td>
+			<td><label for="EfficiencyStandard"></label>
+				<meter id="EfficiencyRace" value="9" min="0" max="10"></meter></td>
+			<td><label for="EfficiencyRace"></label>
+				<meter id="EfficiencyRace" value="6" min="0" max="10"></meter></td>
+			<td><label for="EfficiencyRace"></label>
+				<meter id="EfficiencyRace" value="3" min="0" max="10"></meter></td>
+		</tr>
+		<tr>
+			<td><b>LISTEN</b></td>
+			<td><audio controls>
+				<source src="audio/engine_standard.mp3" type="audio/mpeg">
+			</audio></td>
+			<td><audio controls>
+				<source src="audio/engine_sport.mp3" type="audio/mpeg">
+			</audio></td>
+			<td><audio controls>
+				<source src="audio/engine_race.mp3" type="audio/mpeg">
+			</audio></td>
 		</tr>
 	</table>
 	
@@ -77,7 +131,7 @@
 	
 	<div class="divcolour">
 		<h3>Engine Components</h3>
-		<img class="engineimg" src="images\parts_images\engine.jpg" usemap="#engine" width="1920" height="1080"/ > 
+		<img class="engineimg" src="images/parts_images/engine.jpg" usemap="#engine" width="1920" height="1080"/ > 
 	</div>
 	
 	<hr>
