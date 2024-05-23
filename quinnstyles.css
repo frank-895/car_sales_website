@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+body {
+  background-color: AliceBlue;
+}
+
+.divcolour{
+  background-color: Cornsilk;
+}
+
+.centreimg {
+ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+
+}
+
+.FC {
+  color: brown;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 120%;
+  font-family: Helvetica;
+  text-align: center;
+}
