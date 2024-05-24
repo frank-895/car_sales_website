@@ -26,8 +26,51 @@
         opacity: .5;
     }
 
+    table.quinntable, th.quinntable, td.quinntable, tr.quinntable {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    li.quinnlist {
+        font-variant: small-caps;
+        margin: 2px;
+        padding: 2px;        
+    }
+
+    ol.quinnol {
+        list-style-type: decimal;
+        padding-left: 25px;
+    }
+
+    p.quinnp {
+        font-variant: small-caps;
+    }
+
+    blockquote.quinnbq {
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-style: italic;
+    }
+
+    /* credit: https://stackoverflow.com/questions/26218954/crop-image-in-css 
+    .quinncrop {
+        width: 500px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    /* credit: https://stackoverflow.com/questions/26218954/crop-image-in-css 
+    .quinncrop img {
+        margin-top: -0px;
+        margin-left: -0px;
+    }
+    */
+
     /* QUINN STUFF ABOVE */
-    
+
 * {
     margin: 0;
     padding: 0;
