@@ -58,7 +58,6 @@ nav a:hover:not(.menu-icon) {
 nav .expandable_elements {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
 }
 
 .back_navigation {
@@ -73,8 +72,6 @@ nav .expandable_elements {
 .cart {
     display: flex;
     flex-direction: row;
-=======
->>>>>>> 21157982f80bf38147f15ef469902cfb3313057d
     align-items: center;
 }
 
@@ -202,20 +199,17 @@ a {
     color: inherit;
 }
 
-.why-adelaide {
+.why-sydney {
     background-color: #f4f4f4;
     color: #333;
     padding: 50px 20px;
     text-align: center;
-<<<<<<< HEAD
     font-size: 20px;
     color: white;
     margin: 20px;
-=======
->>>>>>> 21157982f80bf38147f15ef469902cfb3313057d
 }
 
-.why-adelaide h2 {
+.why-sydney h2 {
     font-size: 40px;
     margin-bottom: 30px;
     color: #333;
