@@ -1,97 +1,199 @@
 <!doctype html>
 
+<!-- AUTHOR - QUINN BADDAMS - SEE COMMENTS FOR CREDIT FOR OTHER WORK FROM OTHER GROUP MEMBERS -->
+
+<!-- i will replace my head with the one from index.html, created by other group member
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="quinnstyles.css">
-	<title>Engine</title>
+	<link rel="stylesheet" href="styles.css">
+	<title>Sydney Car Sales - Engines</title>
+</head>
+-->
+
+<!-- this version of the head is from another group member -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sydney Car Sales - Engine</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
+	<script defer src="script.js"></script>
 </head>
 
 <body>
-	<div class="divcolour">
-		<img class="centreimg" src="insert image here.png" width="500" height="400"/>
+	<!-- this nav bit below from index.html made by another group member -->
+	<nav class="topnav" id="topnav">
+		<div class="expandable_elements">
+			<p class="page-title">Sydney Car Sales</p>
+			<div class="link_list">
+				<a class="active" href="index.html">Home</a>
+				<a class="active" href="cars.html">Luxury Cars</a>
+				<a class="active" href="parts.html">Car Parts</a>
+				<a class="active" href="about.html">About</a>
+				<a class="active" href="contact.html">Contact</a>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
+			<i class="fa-solid fa-bars fa-2x"></i>
+		</a>
+	</nav>
+	<!-- this nav bit above from index.html made by another group member -->
+
+
+	<h1>On this page you can satiate all of your <b>Engine</b> needs!</h1>
+
+	<br>
+	<hr>
+	<br>
+
+	<div class="quinncentre">
+		<video width="420" height="340" controls>
+			<source src="video/coverr-checking-the-oil-level-of-a-car-6558-1080p_CC0_coverr_dot_co.mp4" type="video/mp4">
+		</video>
 	</div>
+
+	<br>	
 	<hr>
-	<h1>Engine</h1>
-	<hr>
-	<p>this is a paragraph</p>
-	<audio controls>
-		<source src="insert mp3 here.mp3" type="audio/mpeg">
-	</audio>
-	<hr>
-	<video width="420" height="340" controls>
-		<source src="insert mp4 here.mp4" type="video/mp4">
-	</video>
-	<hr>
-	<p>
-	
+	<br>
+
 	<ul>
-		<li>unordered list item 1
-		<li>list item 2
-		<li>list item 3
-		<li>list item 4
+		<li class="quinnlist">Things that are good about engines:</li>
+		<li>They do work</li>
+		<li>they are really cool</li>
 	</ul>
+
+	<br>
+	<hr>
+	<br>	
 	
-	<ol>
-		<li>ORDERED list item 1
-		<li>list item 2
-		<li>list item 3
-		<li>list item 4
+	<p class="quinnp">Top three reasons for engine failure:</p>
+	<ol class="quinnol" type="1">
+		<li>alien spacecraft <abbr title="Electro Magnetic Fields">EMF</abbr></li>
+		<li>falling into volcanoes</li>
+		<li>spontaneous combustion</li>
 	</ol>
-	
-	<label for="label for meter1">meter1</label>
-	<meter id="meter1" value="5" min="0" max="10"></meter><br>
-	<label for="label for meter2">Meter2</label>
-	<meter id="meter2" value="0.5" min="0" max="1"></meter>
-	
-	<table>
-		<tr>
-			<th> TABLE H</th>
-			<th> TABLE H 2</th>
+
+	<br>
+	<hr>
+	<br>	
+
+	<table class="quinntable">
+		<tr class="quinntable">
+			<th class="quinntable">ENGINES</th>
+			<th class="quinntable">STANDARD</th>
+			<th class="quinntable">SPORT</th>
+			<th class="quinntable">RACE</th>
 		</tr>
-		<tr>
-			<td>Table d</td>
-			<td>table d 2</td>
+		<tr class="quinntable">
+			<td class="quinntable"><b>HORSEPOWER</b></td>
+			<td class="quinntable"><label for="PowerStandard"></label>
+				<meter id="PowerStandard" value="3" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="PowerSport"></label>
+				<meter id="PowerSport" value="6" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="PowerRace"></label>
+				<meter id="PowerRace" value="9" min="0" max="10"></td>
+		</tr>
+		<tr class="quinntable">
+			<td class="quinntable"><b>TORQUE</b></td>
+			<td class="quinntable"><label for="TorqueStandard"></label>
+				<meter id="TorqueStandard" value="3" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="TorqueSport"></label>
+				<meter id="TorqueSport" value="6" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="TorqueRace"></label>
+				<meter id="TorqueRace" value="9" min="0" max="10"></meter></td>
+		</tr>
+		<tr class="quinntable">
+			<td class="quinntable"><b>EFFICIENCY</b></td>
+			<td class="quinntable"><label for="EfficiencyStandard"></label>
+				<meter id="EfficiencyRace" value="9" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="EfficiencyRace"></label>
+				<meter id="EfficiencyRace" value="6" min="0" max="10"></meter></td>
+			<td class="quinntable"><label for="EfficiencyRace"></label>
+				<meter id="EfficiencyRace" value="3" min="0" max="10"></meter></td>
+		</tr>
+		<tr class="quinntable">
+			<td class="quinntable"><b>LISTEN</b></td>
+			<td class="quinntable"><audio controls>
+				<source src="audio/engine_standard.mp3" type="audio/mpeg">
+			</audio></td>
+			<td class="quinntable"><audio controls>
+				<source src="audio/engine_sport.mp3" type="audio/mpeg">
+			</audio></td>
+			<td class="quinntable"><audio controls>
+				<source src="audio/engine_race.mp3" type="audio/mpeg">
+			</audio></td>
 		</tr>
 	</table>
-	
 	</p>
-	
-	<code>enter in some code here</code>
-	
-	<blockquote>block quote</blockquote>
-	
-	<address>
-	put<br>
-	an<br>
-	address<br>
-	here<br>
-	email: <a href="mailto:quinn.baddams@students.cdu.edu.au">Quinn Baddams</a>.<br>
-	</address>
-	
-	<pre>write some stuff here</pre>
-	
-	<figure>
-		<img src="insert image here.png" style="width:100%"/>
-		<figcaption class="FC">here is a figure caption, ie figcaption tag</figcaption>
-	</figure>
-	
-	<div class="divcolour">
-		<h3>Engine Components</h3>
-		<img class="engineimg" src="images\parts_images\engine.jpg" usemap="#engine" width="1920" height="1080"/ > 
-	</div>
-	
+
+	<br>
 	<hr>
-	<map name="engine">
-		<area shape="rect" coords="22,67,200,320" alt="Air Filter" href="" target="_blank">
-		<area shape="rect" coords="200,23,310,190" alt="Cam Shaft" href="" target="_blank">
-		<area shape="rect" coords="370,393,440,460" alt="Hose" href="" target="_blank">
-	</map>
+	<br>
+
+	<p>Want to program your ICU chip to make your engine more powerful? here is the code:</p>
+	<br>
+	<code>for i in revs;<br>
+		increase RPM<br>
+		GOTO line 1<br>
+	</code>
+
+	<br>
+	<hr>
+	<br>
+
+	<p>Here is an amazing quote from the great Enn Gine<sup>1</sup>:</p>
+	<br>	
+	<blockquote class="quinnbq">You put in the fuel, and then you make it go fast!</blockquote>
+
+	<br>
+	<hr>
+	<br>
 	
+	<p>Get in touch with our resident engine tuner:</p>
+	<address>
+	Number 1<br>
+	Street Road<br>
+	South Earth<br>
+	Tel: 1234 567 890<br>
+	email: <a href="mailto:quinn.baddams@students.cdu.edu.au">Quinn Baddams</a>.<br>
+	</address>	
+
+	<br>	
+	<hr>
+	<br>
+
+	<div class="quinncentre">
+		<figure>
+			<img src="images/happy_pexels-olly-712413.jpg" style="width:20%"/>
+			<br>
+			<figcaption>This person is happy that the image below can be resized, while it has links which move accordingly!</figcaption>
+		</figure>
+	</div>
+
+	<br>	
+	<hr>
+	<br>
+
+	<!-- credit idea below to https://stackoverflow.com/questions/11363358/is-possible-create-map-html-area-in-percentage -->
+	<div class="quinnmap">
+		<img class="quinnimg" src="images/parts_images/engine_links.jpg" alt="Engine image with links" />
+		<a href="oils.html" style="top: 2%; left: 40%; width: 28%; height: 24%;"></a>
+		<a href="_Blank" style="top: 31%; left: 35%; width: 31%; height: 12%;"></a>
+		<a href="_Blank" style="top: 62%; left: 42%; width: 28%; height: 22%;"></a>
+	</div>
+	<!-- credit idea above to https://stackoverflow.com/questions/11363358/is-possible-create-map-html-area-in-percentage -->
+
+	<br>	
+	<hr>
+	<br>
 	
+	<pre><sup>1</sup>Enn Gine is a fictional person to the best of our knowledge.</pre>
+		
 	<nav>
 		<a href="insert url here">insert url here</a>
 		<a href="insert url here">insert url here</a>
 		<a href="insert url here">insert url here</a>
 	</nav>
+
 </body>
 </html>
