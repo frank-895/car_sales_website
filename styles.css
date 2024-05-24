@@ -65,6 +65,7 @@
         margin-right: auto;
         width: 50%;
         display: block;
+        text-align: center;
     }
 
     /* credit: https://stackoverflow.com/questions/26218954/crop-image-in-css 
