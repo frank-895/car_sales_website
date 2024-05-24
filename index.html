@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sydney Car Sales - Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Car Sales</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4802565ebc.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
 </head>
 <body>
     <main>
+        <!-- Navigation -->
         <nav class="topnav" id="topnav">
             <div class="expandable_elements">
                 <p class="page-title">Sydney Car Sales</p>
                 <div class="link_list">
                     <a class="active" href="index.html">Home</a>
-                    <a class="active" href="cars.html">Luxury Cars</a>
-                    <a class="active" href="parts.html">Car Parts</a>
-                    <a class="active" href="about.html">About</a>
-                    <a class="active" href="contact.html">Contact</a>
+                    <a href="cars.html">Luxury Cars</a>
+                    <a href="parts.html">Car Parts</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
-            <a href="javascript:void(0)" class="menu-icon" onclick="expand_nav_contents()">
-                <i class="fa-solid fa-bars fa-2x"></i>
-            </a>
         </nav>
 
+        <!-- Hero -->
         <div class="hero">
             <img src="images/blackcar.jpg" alt="Picture of Black Car" class="hero-image">
             <div class="hero-text">
@@ -34,9 +32,12 @@
             </div>
         </div>
 
+        <!-- Main Content -->
         <div class="content_container">
             <h1>Explore our brand!</h1>
-            <p class="init_message">Sydney Car Sales prides ourselves on offering a handpicked selection of European Prestige & Sports Cars with a team of esteemed professionals. Our overall aim is excellent service while delivering high-quality vehicles; that is what stands us out in the automobile industry. Sydney Car Sales has a broad channel of car lovers and collectors; with experience, we have developed a relationship based on trust with our customers. On the understanding that each car has a story and every customer has their definition of a perfect car, we meet all the requirements. Therefore, from classical treasures, collectibles of modern times, daily driver vehicles, we will offer high quality to each. We have a handpicked list of best cars to ensure only quality cars are available to our customers. Our aim, therefore, is to ensure that our customers get the best vehicles. Our experts ensure you get the car of your choice to fit your lifestyle. We have diversified options in financing ideas and favorable pricing, therefore providing value and quality. Sydney Car Sales is also dedicated to providing after-sales services due to continued backing; thus ensuring your car is well maintained. Therefore, buying from the Sydney Car Sales goes beyond moving a car and into a family of distinctive excellence, honesty, and guest contentment. Our determination is to ensure buying a car is admirable, and our customers can visit us for their European Prestige and Sports Cars offers.</p>
+            <p class="init_message">
+                Sydney Car Sales prides itself on offering a handpicked selection of European Prestige & Sports Cars with a team of esteemed professionals. Our aim is excellent service while delivering high-quality vehicles. Sydney Car Sales has developed a relationship based on trust with our customers. We meet all requirements, from classical treasures to daily driver vehicles. We provide value and quality through diversified financing options and favorable pricing. Sydney Car Sales ensures that buying from us goes beyond moving a car and into a family of distinctive excellence, honesty, and guest contentment.
+            </p>
             <div class="links_to_other_pages">
                 <div class="cars">
                     <img src="images/used cars.jpg" alt="used cars">
@@ -52,53 +53,53 @@
                 </div>
             </div>
 
+            <!-- Best Deals -->
             <div class="best-deals">
                 <h2>Our Latest Arrivals</h2>
                 <div class="deals-container">
                     <div class="deal">
                         <img src="images/1974porsche.jpg" alt="1974 Porsche">
                         <h3>1974 Porsche 911 S</h3>
-                        <p>$89,999 drive away!</p>
+                        <p>$180,000 drive away!</p>
                         <p>Year: 1974, Transmission: Manual, Odometer: 30,000km</p>
                     </div>
                     <div class="deal">
                         <img src="images/2016ferrari.jpg" alt="2016 Ferrari">
                         <h3>2016 Ferrari F12berlinetta F152</h3>
-                        <p>$250,000 drive away!</p>
+                        <p>$500,000 drive away!</p>
                         <p>Year: 2016, Transmission: Automatic, Odometer: 10,000km</p>
                     </div>
                     <div class="deal">
                         <img src="images/2017Alfa.jpg" alt="2017 Alfa">
                         <h3>2017 Alfa Romeo 4C</h3>
-                        <p>$60,000 drive away!</p>
+                        <p>$80,000 drive away!</p>
                         <p>Year: 2017, Transmission: Automatic, Odometer: 20,000km</p>
                     </div>
                     <div class="deal">
                         <img src="images/2017benz.jpg" alt="2017 Benz">
                         <h3>2017 Mercedes-Benz C63 AMG S A205</h3>
-                        <p>$70,000 drive away!</p>
+                        <p>$120,000 drive away!</p>
                         <p>Year: 2017, Transmission: Automatic, Odometer: 15,000km</p>
                     </div>
                     <div class="deal">
                         <img src="images/2023bmw.jpg" alt="2023 BMW">
                         <h3>2023 BMW X2 sDrive18i F39</h3>
-                        <p>$150,000 drive away!</p>
+                        <p>$55,000 drive away!</p>
                         <p>Year: 2023, Transmission: Automatic, Odometer: 1,000km</p>
                     </div>
                     <div class="deal">
                         <img src="images/comingsoon.jpg" alt="Coming Soon">
                         <h3>Coming Soon</h3>
-                        <p>Stay tuned for our latest arrivals!</p>
-                        <p>Year: 2024, Transmission: Automatic, Odometer: 0km</p>
                     </div>
                 </div>
                 <div class="view-all-deals">
-                    <button>View All Deals</button>
+                    <button onclick="location.href='cars.html'">View All Deals</button>
                 </div>
             </div>
         </div>
 
-        <div class="why-adelaide">
+        <!-- Why Choose Us -->
+        <div class="why-sydney">
             <h2>Why Sydney Car Sales?</h2>
             <ul class="features">
                 <li>Have had fewer than 3 owners</li>
@@ -108,10 +109,11 @@
                 <li>Come with a full service history</li>
             </ul>
             <div class="guarantee">
-                <p>If you're looking for a car that comes with our guarantee of quality and a great deal, talk to one of our specialists today!</p>
+                <p>We offer you great deals on cars that are guaranteed top quality! Come speak to our car specialists!</p>
             </div>
         </div>
 
+        <!-- Visit Us -->
         <div class="visit-us">
             <div class="visit-us-text">
                 <h2>Come visit us!</h2>
@@ -122,7 +124,7 @@
                         <p><i class="fa-solid fa-location-dot"></i> 1 Macquarie Street, Sydney, NSW 2000</p>
                     </div>
                     <div>
-                        <p><i class="fa-solid fa-phone"></i> Tel: +61 2 8765 4321</p>
+                        <p><i class="fa-solid fa-phone"></i> Tel: +61 7 8465 4361</p>
                     </div>
                 </div>
             </div>
