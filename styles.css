@@ -1,3 +1,33 @@
+    /* QUINN STUFF BELOW */
+
+    .quinnimg {
+        width: 100%;
+        height: auto;
+    }
+      
+    .quinnmap {
+        position: relative;
+    }
+      
+    .quinnmap a {
+        display: block;      
+        position: absolute;
+        text-decoration: none;
+        color: inherit;
+        border: 10px;
+        border-color: aqua;
+        border-style: solid;
+        border-radius: 20px;
+    }
+      
+    .quinnmap a:hover {
+        border:1px solid red;  
+        background-color: aquamarine;
+        opacity: .5;
+    }
+
+    /* QUINN STUFF ABOVE */
+    
 * {
     margin: 0;
     padding: 0;
@@ -430,4 +460,6 @@ a {
         width: 90%;
         margin: 10px 0;
     }
+
+
 }
